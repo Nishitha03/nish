@@ -1,29 +1,29 @@
-# PDF Combiner
+# Nish
 
 A simple command-line tool to combine PDF files in a folder.
 
 ## Installation
 
 ```bash
-pip install pdf-combiner
+pip install nish
 ```
 
 ## Usage
 
 Combine PDFs in the current directory:
 ```bash
-pdf-combiner .
+nish .
 ```
 
-Combine PDFs in a specific folder with a custom output name:
+Combine PDFs in a specific folder:
 ```bash
-pdf-combiner /path/to/pdfs -o merged.pdf
+nish /path/to/pdfs
 ```
 
-### Options
-
-- `folder`: Path to the folder containing PDF files (required)
-- `-o, --output`: Name of the output PDF file (optional, default: combined.pdf)
+Combine PDFs with a custom output name:
+```bash
+nish /path/to/pdfs -o merged.pdf
+```
 
 ## Features
 
@@ -33,8 +33,7 @@ pdf-combiner /path/to/pdfs -o merged.pdf
 
 ## Requirements
 
-- Python 3.7+
-- PyPDF2
+- Python 3.8+
 
 ## License
 
